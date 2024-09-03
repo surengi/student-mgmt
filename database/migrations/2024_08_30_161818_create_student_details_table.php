@@ -17,17 +17,17 @@ return new class extends Migration
             $table->string('name');
             $table->date('dob');
             $table->tinyInteger('gender');
-            $table->string('province');
-            $table->string('district');
-            $table->string('city');
-            $table->integer('vdcNo');
-            $table->string('toleName');
-            $table->string('phone');
+            // $table->string('province');
+            // $table->string('district');
+            // $table->string('city');
+            // $table->integer('vdcNo');
+            // $table->string('toleName');
+            // $table->string('phone');
             $table->string('email');
-            $table->date('enrollmentDate');
-            $table->string('program');
-            $table->string('status');
-            $table->string('emergencyContactNo');
+            // $table->date('enrollmentDate');
+            // $table->string('program');
+            // $table->string('status');
+            // $table->string('emergencyContactNo');
             $table->timestamps();
         });
     }
