@@ -12,5 +12,5 @@ class StudentDetail extends Model
     // private $table = "student_details";
 
     // todo fill all the fillable columns
-    protected $fillable = [ 'usn','name','dob'];
+    protected $fillable = [ 'usn','name','dob','grnder','province','district','wardNo','toleName','phone'.'email','enrollmentDate','program','status',];
 }
