@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GetController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\StudentDetailController;
 use App\Models\StudentDetail;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +34,10 @@ Route::get('posts/{post}',[StudentDetailController::class,'show'])->name('posts.
 Route::get('posts/{post}/edit',[StudentDetailController::class,'edit'])->name('posts.edit');
 Route::put('/posts/{post}',[StudentDetailController::class,'update'])->name('posts.update');
 Route::delete('/posts/{post}',[StudentDetailController::class,'destroy'])->name('posts.destroy');
+
+
+// Route::resource('/registrations', RegistrationController::class)->only(['index','create','store', '']);
+Route::resource('/registrations', RegistrationController::class);
 
 
 
